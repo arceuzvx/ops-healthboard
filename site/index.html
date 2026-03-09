@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPS-HEALTHBOARD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+    <h1>OPS-HEALTHBOARD</h1>
+    <p>Last Updated: 19:32 UTC</p>
+</header>
+
+
+<section class="services-status">
+
+    <h2>Services Status</h2>
+
+    <div class="service-grid">
+
+        <div class="service-card online">
+            <h3>nginx</h3>
+            <span class="status-dot"></span>
+            <p>ONLINE</p>
+            <small>up 3 hours</small>
+        </div>
+
+        <div class="service-card online">
+            <h3>jenkins</h3>
+            <span class="status-dot"></span>
+            <p>ONLINE</p>
+            <small>up 5 hours</small>
+        </div>
+
+        <div class="service-card offline">
+            <h3>gitea</h3>
+            <span class="status-dot"></span>
+            <p>OFFLINE</p>
+            <small>down 12 mins</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="deployments">
+
+    <h2>Recent Deployments</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Commit</th>
+                <th>Message</th>
+                <th>Deployed By</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>a1b2c3d</td>
+                <td>add pipeline config</td>
+                <td>shreya</td>
+                <td>10 mins ago</td>
+            </tr>
+
+            <tr>
+                <td>d4e5f6g</td>
+                <td>fix dockerfile</td>
+                <td>violet</td>
+                <td>32 mins ago</td>
+            </tr>
+
+            <tr>
+                <td>x7y8z9k</td>
+                <td>update healthcheck</td>
+                <td>ops-bot</td>
+                <td>1 hour ago</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+<section class="system-info">
+
+    <h2>System Info</h2>
+
+    <ul>
+        <li>Environment: local</li>
+        <li>Platform: Docker + Jenkins</li>
+        <li>Branch: main</li>
+    </ul>
+
+</section>
+
+
+<footer>
+    <p>ops-healthboard v1.0 — internal use only</p>
+</footer>
+</div>
+</body>
+</html>

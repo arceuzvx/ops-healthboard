@@ -1,0 +1,167 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Page */
+
+body {
+    background: #0d1117;
+    color: #e6edf3;
+    font-family: 'Courier New', monospace;
+    padding: 30px;
+}
+
+
+/* Layout wrapper */
+
+.wrapper {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #58a6ff;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #8b949e;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+
+/* Section containers */
+
+section {
+    background: #161b22;
+    border: 1px solid #30363d;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #58a6ff;
+    margin-bottom: 18px;
+}
+
+
+/* Service grid */
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+}
+
+
+/* Service cards */
+
+.service-card {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    padding: 18px;
+    border-radius: 8px;
+    text-align: center;
+    transition: border-color 0.2s;
+}
+
+.service-card:hover {
+    border-color: #58a6ff;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card small {
+    color: #8b949e;
+}
+
+
+/* Status indicator */
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 8px 0;
+}
+
+
+/* Status colors */
+
+.online .status-dot {
+    background: #3fb950;
+}
+
+.offline .status-dot {
+    background: #f85149;
+}
+
+
+/* Deployment table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background: #21262d;
+    color: #e6edf3;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #30363d;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #30363d;
+}
+
+
+/* Commit hashes */
+
+td:first-child {
+    color: #58a6ff;
+}
+
+
+/* System info */
+
+.system-info ul {
+    list-style: none;
+}
+
+.system-info li {
+    padding: 6px 0;
+    color: #8b949e;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    color: #8b949e;
+    margin-top: 30px;
+    font-size: 13px;
+}
